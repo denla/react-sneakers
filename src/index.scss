@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:  #E7F6FF;
+  
+}
+
+* {
+  font-family: Inter;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper {
+  width: 1080px;
+  background:  white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+header {
+  border-bottom: 1px solid #e4e4e4;
+
+  .headerLeft {
+    display: flex;
+    align-items: center;
+  }
+  h3, p {
+    margin: 0;
+  }
+}
+
+.card {
+  box-sizing: border-box;
+  width: 210px;
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  border-radius: 40px;
+
+  &:hover {
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+  cursor: pointer;
+  }
+}
+
+.btn-square {
+  background: transparent;
+  border: 1px solid #e4e4e4;
+  width: 32px;
+  height: 32px;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.search-block {
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  padding: 0 13px;
+  display: flex;
+  align-content: center;
+}
+
+input {
+  border: 0;
+  padding: 10px;
+}
+
+.favourite {
+  position: absolute;
+  cursor: pointer;
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background: #00000087;
+}
+.drawer {
+  position: absolute;
+  width: 385px;
+  height: 100%;
+  top: 0px;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+  padding: 30px;
+
+  h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #F3F3F3;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+.btn-main {
+  width: 325px;
+  height: 55px;
+  border: 0;
+  background: #9DD558;
+  border-radius: 18px;
+  color: white;
+  cursor: pointer;
+}
