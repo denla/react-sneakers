@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const CartItem = () => {
+export const CartItem = ({title, price}) => {
   return (
     <div className="cartItem">
         <img src="/img/image 5.jpg" width={70} height={70} className="mr-20"/>
         <div>
-        <p className="mb-5">Мужские Кроссовки Nike Air Max 270</p>
-        <span className="fw-bold">12 999 руб.</span>
+        <p className="mb-5">{title}</p>
+        <span className="fw-bold">{price} руб.</span>
         </div>
 
         <button className="btn-square">
